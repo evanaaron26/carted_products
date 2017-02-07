@@ -1,24 +1,15 @@
-# README
+# Product Orders
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repository is the basic setup to practice creating a shopping cart. It has a Product table, an Order table, and a CartedProducts table. The CartedProducts table represents the objects that have been placed into the cart before purchase.
 
-Things you may want to cover:
+* clone the repo
 
-* Ruby version
+* bundle
 
-* System dependencies
+* rails db:create
 
-* Configuration
+* rails db:migrate
 
-* Database creation
+* rails db:seed
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* rails server
