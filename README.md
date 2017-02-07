@@ -15,11 +15,18 @@ This repository is the basic setup to practice creating a shopping cart. It has 
 * rails server
 
 ```
+// break association between carted_products and orders for now. Otherwise, an order must exist before you place a product into the cart.
+class CartedProduct
+     remove belongs_to :order
 
-// break association between carted_products and orders for now
-// app/models - look at associations
+// app/models - look at the remaining association for CartedProduct. It belongs_to :product, which means it carted_product.product.name will be possible.
+
 // app/controllers - look at controllers
   add t.string :status to CartedProducts
+
+rails g migration AddStatustoCartedProducts status:string
+// check the controller
+rake db:migrate
 
 // products show.html.erb
 
