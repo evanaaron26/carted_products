@@ -1,0 +1,6 @@
+<% @products.each do |product| %>
+  <p><%= link_to "ID: #{product.id}", "/products/#{product.id}" %></p>
+  <p><%= product.name %></p>
+  <p>$<%= product.price %></p>
+  <hr>
+<% end %>
