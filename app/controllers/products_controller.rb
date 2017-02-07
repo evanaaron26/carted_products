@@ -30,10 +30,10 @@ class ProductsController < ApplicationController
   def update
     @product = Product.find(params[:id])
     @product.assign_attributes(
-         name: params[:_name],
+         name: params[:name],
          price: params[:price]
          )
-@product.save
+    @product.save
     flash[:success] = "Product updated."
     redirect_to "/products/#{@product.id}"
   end

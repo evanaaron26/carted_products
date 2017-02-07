@@ -1,7 +1,8 @@
+<p><a href="/products/new">Add a product</a></p>
+<hr>
 <% @products.each do |product| %>
   <p><%= link_to "ID: #{product.id}", "/products/#{product.id}" %></p>
   <p><%= product.name %></p>
   <p>$<%= product.price %></p>
   <hr>
 <% end %>
-<p><a href="">Add a product</a></p>
